@@ -1,18 +1,22 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AppHomeInput v-model="body" />
+    {{ body }}
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import AppHomeInput from '../components/AppHomeInput'
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
-    HelloWorld
+    AppHomeInput
+  },
+  data() {
+    return {
+      body: ''
+    }
   }
 }
 </script>
