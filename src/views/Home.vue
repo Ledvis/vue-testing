@@ -1,22 +1,16 @@
 <template>
   <div class="home">
-    <AppHomeInput v-model="body" />
-    {{ body }}
+    <AppSignIn />
   </div>
 </template>
 
 <script>
-import AppHomeInput from '../components/AppHomeInput'
+import AppSignIn from '../components/AppSignIn'
 
 export default {
   name: 'Home',
   components: {
-    AppHomeInput
+    AppSignIn
   },
-  data() {
-    return {
-      body: ''
-    }
-  }
 }
 </script>
