@@ -24,7 +24,7 @@ describe("Name of the group", () => {
 
     await wrapper.vm.$nextTick();
 
-    const items = wrapper.findAll('li')
+    const items = wrapper.findAll('li');
 
     expect(items.at(0).text()).toContain('sunt aut')
   });

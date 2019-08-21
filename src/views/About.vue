@@ -1,17 +1,17 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    <AppNotification />
+    <AppForm />
   </div>
 </template>
 
 <script>
-import AppNotification from '@/components/AppNotification'
+import AppForm from '@/components/AppForm'
 
 export default {
   name: 'About',
   components: {
-    AppNotification
+    AppForm
   }
 }
 </script>
