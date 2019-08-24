@@ -12,6 +12,8 @@
     <br>
     <br>
     <AppCountdown :start="5" />
+    <br><br>
+    <AppGreeting />
   </div>
 </template>
 
@@ -19,13 +21,15 @@
 import AppSignIn from '@/components/AppSignIn'
 import AppCoursePlaylist from '@/components/AppCoursePlaylist'
 import AppCountdown from '@/components/AppCountdown'
+import AppGreeting from '@/components/AppGreeting'
 
 export default {
   name: 'Home',
   components: {
     AppSignIn,
     AppCoursePlaylist,
-    AppCountdown
+    AppCountdown,
+    AppGreeting
   },
 }
 </script>
