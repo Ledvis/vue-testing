@@ -7,6 +7,10 @@
         :key="item.id"
       >
         {{ item.title }}
+        <a
+          href="#"
+          @click="markNotification(item.id)"
+        >Mark notification</a>
       </li>
     </ul>
   </div>
@@ -27,8 +31,9 @@ export default {
   },
   methods: {
     ...mapActions({
-      getNotifications: 'getNotifications'
-    })
+      getNotifications: 'getNotifications',
+      markNotification: 'markNotification'
+    }),
   }
 }
 </script>
