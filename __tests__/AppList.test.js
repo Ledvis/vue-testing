@@ -54,6 +54,6 @@ describe("AppList", () => {
 
     listEls.at(0).trigger("click");
 
-    expect(markNotification.mock.calls[0][1]).toEqual(1);
+    expect(markNotification.mock.calls[0][1]).toEqual(expectedNotificationId);
   });
 });
